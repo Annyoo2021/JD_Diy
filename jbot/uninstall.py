@@ -63,3 +63,4 @@ async def myuninstall(event):
 
 if chname:
     jdbot.add_event_handler(myuninstall, events.NewMessage(from_users=chat_id, pattern=mybot['命令别名']['cron']))
+
