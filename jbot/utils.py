@@ -21,9 +21,9 @@ def myids(values, test_id):
     return ids
 
 
-myzdjr_chatIds = myids(diybotset['myzdjr_chatId'], my_chat_id)
+# myzdjr_chatIds = myids(diybotset['myzdjr_chatId'], my_chat_id)
 
-myjoinTeam_chatIds = myids(diybotset['myjoinTeam_chatId'], my_chat_id)
+# myjoinTeam_chatIds = myids(diybotset['myjoinTeam_chatId'], my_chat_id)
 
 QL8, QL2 = False, False
 if os.path.exists('/ql/config/env.sh'):
