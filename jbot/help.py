@@ -10,7 +10,6 @@ import sys, os
 
 bot_id = int(TOKEN.split(':')[0])
 
-
 @jdbot.on(events.NewMessage(from_users=chat_id, pattern=r'^/help$'))
 async def myhelp(event):
     try:
