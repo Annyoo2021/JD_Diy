@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
 from .. import chat_id, jdbot, logger, _JdDir, _JdbotDir, chname, mybot
 from ..bot.utils import press_event, split_list, row
 from telethon import events, Button
