@@ -86,7 +86,7 @@ async def red(event):
         logger.error(f"错误--->{str(e)}")
 
 
-@client.on(events.NewMessage(chats=myzdjr_chatIds, pattern=r'export\sjd_zdjr_activity(Url|Id)=(".*"|\'.*\')'))
+@client.on(events.NewMessage(chats=my_chat_id, pattern=r'export\sjd_zdjr_activity(Url|Id)=(".*"|\'.*\')'))
 async def myzdjr(event):
     try:
         msg = await jdbot.send_message(chat_id, '监控到 jd_zdjr_activity 环境变量')
@@ -142,7 +142,7 @@ async def myzdjr(event):
         logger.error(f"错误--->{str(e)}")
 
 
-@client.on(events.NewMessage(chats=myjoinTeam_chatIds, pattern=r"^export\sjd_joinTeam_activityId=\".*\"|.*='.*'"))
+@client.on(events.NewMessage(chats=my_chat_id, pattern=r"^export\sjd_joinTeam_activityId=\".*\"|.*='.*'"))
 async def myjoinTeam(event):
     try:
         end = False
